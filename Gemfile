@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.7.1'
 
 gem 'zip'
 gem 'lograge'
@@ -11,10 +11,10 @@ gem 'posix-spawn'
 gem 'google-api-client', '~>0.8.0'
 gem "github_api", require: false
 gem 'colorize', require: false
-gem 'twitter'
-gem 'market_bot'
+gem 'twitter', '>= 5.11.0'
+gem 'market_bot', '>= 0.17.0'
 gem 'koala'
-gem "brakeman", require: false
+gem "brakeman", ">= 3.3.0", require: false
 gem "bundler-audit"
 gem 'rest-client'
 gem 'chartkick'
@@ -30,7 +30,7 @@ gem 'filesize'
 
 # scott things
 gem 'json-schema-generator'
-gem 'zeroclipboard-rails'
+gem 'zeroclipboard-rails', '>= 0.1.1'
 
 gem 'activerecord-session_store', git: 'https://github.com/rails/activerecord-session_store'
 #Database gems
@@ -41,20 +41,20 @@ gem 'pg'
 gem 'git'
 
 #Workflow
-gem 'workflowable'
+gem 'workflowable', '>= 1.0.1'
 
 #JIRA Integration
-gem 'jiralicious'
+gem 'jiralicious', '>= 0.4.3'
 
 #Authorization
 gem 'cancan'
 
 #Searching
-gem 'ransack'
+gem 'ransack', '>= 1.7.0'
 
 #Image processing/attachments
-gem 'paperclip'
-gem 'aws-sdk', '< 2.0'
+gem 'paperclip', '>= 4.2.2'
+gem 'aws-sdk', '>= 1.51.0', '< 2.0'
 
 
 # Time period parsing
@@ -67,14 +67,14 @@ gem "select2-rails"
 gem 'oj'
 
 #Bulk edits
-gem 'activerecord-import'
+gem 'activerecord-import', '>= 0.5.0'
 
 #Used for task queueing
 gem 'sidekiq'
 gem 'sidekiq-status'
 
 #Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.1'
 
 #Sidekiq UI
 gem 'sinatra', require: false
@@ -84,20 +84,20 @@ gem 'slim'
 
 #Performance gem that changes how links are handed
 ##gem 'turbolinks'
-gem 'jquery-turbolinks'
+gem 'jquery-turbolinks', '>= 2.0.2'
 
 #Allowing exporting/importing data into database
-gem 'yaml_db'
+gem 'yaml_db', '>= 0.4.0'
 
 #Authentication
-gem 'devise'
-gem 'responders'
+gem 'devise', '>= 4.1.0'
+gem 'responders', '>= 2.2.0'
 
 #Comments
-gem 'acts_as_commentable_with_threading'
+gem 'acts_as_commentable_with_threading', '>= 1.2.0'
 
 #JSON API Calls
-gem "active_model_serializers"
+gem "active_model_serializers", ">= 0.10.2"
 
 # Cron job generation
 gem "whenever"
@@ -107,8 +107,8 @@ gem "hashdiff"
 
 #gem 'active_scaffold'
 gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'simple_form'
+gem "less-rails" , ">= 2.5.0" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'simple_form', '>= 3.2.1'
 
 gem 'ip'
 
@@ -119,7 +119,7 @@ gem 'net-http-persistent'
 
 gem 'minitest'
 
-gem 'minitest-rails'
+gem 'minitest-rails', '>= 2.2.1'
 
 group :development, :test, :production do
   gem 'unicorn'
@@ -135,15 +135,15 @@ end
 group :development, :dirtylaundrydev do
   gem 'spring', group: :development
   gem "ruby-prof"
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.3.4'
   gem "binding_of_caller"
   gem "bullet"
-  gem 'rack-mini-profiler', require: false
+  gem 'rack-mini-profiler', '>= 0.10.1', require: false
   gem 'flamegraph'
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.2', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -160,15 +160,15 @@ end
 
 #Testing
 group :development, :test, :dirtylaundrydev do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'rspec-rails', '>= 3.0.2'
+  gem 'factory_girl_rails', '>= 4.4.1'
 
 end
 
 group :test do
   gem 'database_cleaner'
   gem 'shoulda'
-  gem 'activerecord-nulldb-adapter'
+  gem 'activerecord-nulldb-adapter', '>= 0.3.1'
   gem 'minitest-reporters'
   gem 'shoulda-matchers', '~> 2.0'
   gem 'shoulda-callback-matchers', '~> 1.1.1'
@@ -176,15 +176,15 @@ group :test do
 end
 
 gem 'foundation-rails', '5.3.3.0'
-gem 'sass-rails',   '4.0.3'
+gem 'sass-rails', '4.0.4'
 gem 'sass', '3.2.19'
 gem 'coffee-rails', '4.0.1'
-gem 'sprockets', '2.11.0'
+gem 'sprockets', '2.11.3'
 
 
-gem 'uglifier'
+gem 'uglifier', '>= 2.7.2'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.4'
 
 gem 'rb-readline'
 
