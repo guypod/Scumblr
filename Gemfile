@@ -12,7 +12,7 @@ gem 'google-api-client', '~>0.8.0'
 gem "github_api", require: false
 gem 'colorize', require: false
 gem 'twitter'
-gem 'market_bot'
+gem 'market_bot', '>= 0.17.0'
 gem 'koala'
 gem "brakeman", require: false
 gem "bundler-audit"
@@ -140,7 +140,7 @@ group :development, :dirtylaundrydev do
   gem "bullet"
   gem 'rack-mini-profiler', require: false
   gem 'flamegraph'
-  gem 'rbtrace'
+  gem 'rbtrace', '>= 0.4.8'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
   gem 'rails-footnotes', '>= 4.0.0', '<5'
@@ -191,7 +191,7 @@ gem 'rb-readline'
 
 # needed by  sidekiq
 gem 'json'
-gem 'ffi'
+gem 'ffi', '>= 1.9.24'
 
 
 if File.exists?("custom/Gemfile")
