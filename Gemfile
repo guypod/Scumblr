@@ -90,7 +90,7 @@ gem 'jquery-turbolinks'
 gem 'yaml_db'
 
 #Authentication
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 gem 'responders'
 
 #Comments
