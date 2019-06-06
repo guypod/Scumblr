@@ -17,7 +17,7 @@ gem 'koala'
 gem "brakeman", require: false
 gem "bundler-audit"
 gem 'rest-client'
-gem 'chartkick'
+gem 'chartkick', '>= 3.2.0'
 
 gem 'redcarpet'
 
