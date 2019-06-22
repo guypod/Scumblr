@@ -41,7 +41,7 @@ gem 'pg'
 gem 'git'
 
 #Workflow
-gem 'workflowable'
+gem 'workflowable', '>= 1.0.1'
 
 #JIRA Integration
 gem 'jiralicious'
@@ -184,7 +184,7 @@ gem 'sprockets', '2.11.0'
 
 gem 'uglifier'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.4'
 
 gem 'rb-readline'
 
