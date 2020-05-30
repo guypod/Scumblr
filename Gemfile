@@ -74,7 +74,7 @@ gem 'sidekiq'
 gem 'sidekiq-status'
 
 #Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 
 #Sidekiq UI
 gem 'sinatra', require: false
