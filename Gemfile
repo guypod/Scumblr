@@ -19,7 +19,7 @@ gem "bundler-audit"
 gem 'rest-client'
 gem 'chartkick'
 
-gem 'redcarpet'
+gem 'redcarpet', '>= 3.5.1'
 
 gem 'addressable'
 
