@@ -44,7 +44,7 @@ gem 'git'
 gem 'workflowable'
 
 #JIRA Integration
-gem 'jiralicious'
+gem 'jiralicious', '>= 0.4.3'
 
 #Authorization
 gem 'cancan'
